@@ -9,10 +9,10 @@ import ResizableBox from 're-resizable'
 import Section from './section-tag'
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
-const { 
-	PanelBody, 
+const {
+	PanelBody,
 	RangeControl,
-	Button, 
+	Button,
 	ResponsiveWrapper,
 	ToggleControl,
 	SelectControl,
@@ -34,6 +34,10 @@ export default ( props ) => {
 		setBackgroundColor,
 		toggleSelection,
 	} = props;
+
+	if (props.attributes.align != 'full') {
+		props.setAttributes({ align: 'full' })
+	}
 
 	const onSelectBgImage = ( media ) => {
 		setAttributes( {
@@ -223,7 +227,7 @@ export default ( props ) => {
 									}
 								)
 							}
-						}						
+						}
 					]}
 				/>
 			</InspectorControls>
@@ -237,7 +241,7 @@ export default ( props ) => {
 						{ label: 'footer', value: 'footer' },
 						{ label: 'div', value: 'div' },
 					] }
-					onChange={ ( tagName ) => { setAttributes( { tagName } ) } }				
+					onChange={ ( tagName ) => { setAttributes( { tagName } ) } }
 				/>
 			</InspectorAdvancedControls>
 			<Section
@@ -249,7 +253,7 @@ export default ( props ) => {
 				} }
 			>
 				{ !! bgImage && <div
-					className={ classnames( 
+					className={ classnames(
 						'section-bg', {
 							'bg__repeated': bgOptions.repeat,
 							'bg__stretched': bgOptions.stretch || bgOptions.fixed,

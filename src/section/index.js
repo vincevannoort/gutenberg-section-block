@@ -14,7 +14,7 @@ import blockAttributes from './attributes'
 
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const { __ } = wp.i18n; // Import __() from wp.i18n
-const { 
+const {
 	withFallbackStyles,
 } = wp.components;
 const { compose } = wp.compose;
@@ -49,7 +49,7 @@ const FallbackStyles = withFallbackStyles( ( node, ownProps ) => {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'mkl/section-block', {
+registerBlockType( 'debatunie/section-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'Section' ), // Block title.
 	icon: 'align-center', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
@@ -60,7 +60,7 @@ registerBlockType( 'mkl/section-block', {
 	],
 	attributes: blockAttributes,
 	supports: {
-		align: [ 'wide', 'full' ], // Support Wide and Full alignment controls
+		align: [ 'full' ], // Support Wide and Full alignment controls
 	},
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.

@@ -4,8 +4,8 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
- 
- .wp-block-mkl-section-block {
+
+ .wp-block-debatunie-section-block {
 	position: relative;
 	.section-bg {
 		&.bg__fixed {
@@ -17,15 +17,15 @@
 		margin-right: 0;
 	}
 }
-.edit-post-visual-editor .editor-block-list__block[data-type="mkl/section-block"] {
+.edit-post-visual-editor .editor-block-list__block[data-type="debatunie/section-block"] {
 	/* Clearfix */
-	section.wp-block-mkl-section-block::before,
-	section.wp-block-mkl-section-block::after {
+	section.wp-block-debatunie-section-block::before,
+	section.wp-block-debatunie-section-block::after {
 		content: ' ';
 		display: table;
 	}
 }
-.edit-post-visual-editor .editor-block-list__block[data-type="mkl/section-block"].is-selected {
+.edit-post-visual-editor .editor-block-list__block[data-type="debatunie/section-block"].is-selected {
 
 	.core-blocks-spacer__resize-handler-bottom {
 		bottom: calc(50% - 8px) !important;
@@ -97,7 +97,7 @@
 				position: absolute;
 				left: calc(50% - 8px);
 				top: -6px;
-			}				
+			}
 	}
 	}
 

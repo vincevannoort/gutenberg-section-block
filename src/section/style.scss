@@ -4,8 +4,10 @@
  * CSS for both Frontend+Backend.
  */
 
-.wp-block-mkl-section-block {
+.wp-block-debatunie-section-block {
 	position: relative;
+	padding-top: 110px;
+	padding-bottom: 110px;
 
 	&, .entry-content > & {
 		max-width: none;

@@ -1,13 +1,10 @@
 <?php
 /**
  * Plugin Name: Gutenberg Section Block
- * Plugin URI: https://github.com/marcusig/gutenberg-section-block/
- * Description: Section block — is a Gutenberg plugin created via create-guten-block.
- * Author: marcusig, mklacroix
- * Author URI: https://mklacroix.com/
- * Version: 1.1.3
- * License: GPL2+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Plugin URI: https://github.com/vincevannoort/gutenberg-section-block
+ * Description: Section block — is a Gutenberg plugin created via create-guten-block, based on: https://github.com/marcusig/gutenberg-section-block.
+ * Author: Vince van Noort
+ * Version: 1.0
  *
  * @package CGB
  */
